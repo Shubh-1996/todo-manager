@@ -2,7 +2,7 @@ const express = require("express");
 const app = express();
 const dotenv = require("dotenv");
 const mongoose = require("mongoose");
-const PORT = process.env.PORT || 3000;
+var PORT = process.env.PORT || 3000;
 //models
 const ToDoTask = require("./models/ToDoTask");
 dotenv.config();
