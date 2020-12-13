@@ -9,7 +9,7 @@ dotenv.config();
 app.use("/static", express.static("public"));
 app.use(express.urlencoded({ extended: true }));
 
-//connection to db should be done within the model
+//connection to db should be done within the model file
 mongoose.set("useFindAndModify", false);
 mongoose.set("useUnifiedTopology", true)
 mongoose.connect(process.env.DB_CONNECT, { useNewUrlParser: true }, () => {
